@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container{
+    max-height: 100vh;
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+.item{
+    border-bottom: 10px solid white;
+    color: black;
+    background: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 6vw;
+    scroll-snap-align: start;
+}
+.item:nth-child(odd){
+    background: pink;
+}
+.item:last-child{
+    border: none;
+}
