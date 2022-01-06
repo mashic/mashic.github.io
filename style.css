@@ -4,7 +4,7 @@ body{
 }
 .container{
     max-height: 100vh; /* 100% height */
-    overflow: scroll;
+    overflow: scroll; /* Scrolling */
     overflow-x: hidden; 
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
