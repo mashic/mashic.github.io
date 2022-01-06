@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 .container{
-    max-height: 100vh;
+    max-height: 100vh; /* 100% height */
     overflow: scroll;
     overflow-x: hidden; 
     scroll-snap-type: mandatory;
