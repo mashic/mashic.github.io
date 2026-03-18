@@ -1,4 +1,27 @@
 <section class="section" id="experience">
   <h2 class="section-heading" data-number="04.">Experience</h2>
-  <p class="placeholder">Experience details coming in Phase 2.</p>
+
+  @for (exp of experiences; track exp.company) {
+    <div class="experience-entry">
+      <div class="exp-header">
+        <h3 class="exp-role">{{ exp.role }}
+          <span class="exp-company">&#64; {{ exp.company }}</span>
+        </h3>
+        <span class="exp-period">{{ exp.period }}</span>
+      </div>
+      <p class="exp-description">{{ exp.description }}</p>
+
+      <div class="exp-domains">
+        @for (domain of exp.domains; track domain) {
+          <span class="domain-tag">{{ domain }}</span>
+        }
+      </div>
+
+      <ul class="exp-highlights">
+        @for (highlight of exp.highlights; track highlight) {
+          <li>{{ highlight }}</li>
+        }
+      </ul>
+    </div>
+  }
 </section>

@@ -7,7 +7,7 @@ Build a single-page Angular portfolio from scratch, starting with the project sc
 ## Phases
 
 - [x] **Phase 1: Foundation** — Angular scaffold + layout + hero/about/skills/contact/nav sections ✅
-- [ ] **Phase 2: Content** — Projects cards + Experience section with RSS suite descriptions
+- [x] **Phase 2: Content** — Projects cards + Experience section with RSS suite descriptions ✅
 - [ ] **Phase 3: Polish** — Architecture diagrams + animations + responsive tuning + deployment
 
 ## Phase Details
@@ -44,8 +44,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: Projects section with card component and data
-- [ ] 02-02: Experience section with RSS suite content
+- [x] 02-01: Projects section with card component and data ✅
+- [x] 02-02: Experience section with RSS suite content ✅
 
 ### Phase 3: Polish
 

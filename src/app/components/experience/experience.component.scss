@@ -1,6 +1,83 @@
+$accent: #64ffda;
+$text-primary: #e6f1ff;
 $text-secondary: #8892b0;
+$text-tertiary: #a8b2d1;
+$bg-card: #112240;
+$font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+$transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-.placeholder {
+.experience-entry {
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.exp-role {
+  font-size: clamp(18px, 3vw, 22px);
+  color: $text-primary;
+  font-weight: 600;
+}
+
+.exp-company {
+  color: $accent;
+}
+
+.exp-period {
+  font-family: $font-mono;
+  font-size: 13px;
   color: $text-secondary;
-  font-style: italic;
+  white-space: nowrap;
+}
+
+.exp-description {
+  color: $text-secondary;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.exp-domains {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.domain-tag {
+  font-family: $font-mono;
+  font-size: 12px;
+  color: $accent;
+  background: rgba(100, 255, 218, 0.07);
+  border: 1px solid rgba(100, 255, 218, 0.15);
+  padding: 4px 12px;
+  border-radius: 3px;
+}
+
+.exp-highlights {
+  list-style: none;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: $text-secondary;
+    line-height: 1.5;
+
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: $accent;
+    }
+  }
 }
