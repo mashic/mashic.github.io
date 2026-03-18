@@ -1,0 +1,15 @@
+<section class="section" id="skills">
+  <h2 class="section-heading" data-number="02.">Skills & Technologies</h2>
+  <div class="skills-grid">
+    @for (category of categories; track category.name) {
+      <div class="skill-category">
+        <h3 class="category-name">{{ category.name }}</h3>
+        <div class="skill-badges">
+          @for (skill of category.skills; track skill) {
+            <span class="badge">{{ skill }}</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

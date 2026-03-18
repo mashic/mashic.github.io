@@ -1,0 +1,17 @@
+$text-secondary: #8892b0;
+$accent: #64ffda;
+
+.about-content {
+  max-width: 600px;
+
+  p {
+    margin-bottom: 16px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: $text-secondary;
+
+    .highlight {
+      color: $accent;
+    }
+  }
+}
