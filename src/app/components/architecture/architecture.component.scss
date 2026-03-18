@@ -1,6 +1,121 @@
+$accent: #64ffda;
+$text-primary: #e6f1ff;
 $text-secondary: #8892b0;
+$bg-card: #112240;
+$border-color: #233554;
+$font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+$transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-.placeholder {
+.arch-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  font-family: $font-mono;
+  font-size: 13px;
+  padding: 8px 20px;
+  background: none;
+  border: 1px solid $border-color;
   color: $text-secondary;
-  font-style: italic;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all $transition;
+
+  &:hover {
+    color: $accent;
+    border-color: $accent;
+  }
+
+  &.active {
+    color: $accent;
+    border-color: $accent;
+    background: rgba(100, 255, 218, 0.07);
+  }
+}
+
+.arch-panel {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.arch-description {
+  color: $text-secondary;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 650px;
+  margin-bottom: 32px;
+}
+
+.layers-diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+}
+
+.layer {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 16px 20px;
+  background: rgba(17, 34, 64, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform $transition;
+
+  &:hover {
+    transform: translateX(6px);
+  }
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.layer-label {
+  font-family: $font-mono;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.layer-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.layer-item {
+  font-size: 13px;
+  color: $text-secondary;
+  background: rgba(100, 255, 218, 0.04);
+  padding: 3px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.arrow-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: $text-secondary;
+  font-family: $font-mono;
+  font-size: 12px;
+  opacity: 0.6;
+
+  .arrow {
+    color: $accent;
+    font-size: 16px;
+  }
 }

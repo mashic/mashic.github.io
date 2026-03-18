@@ -1,4 +1,39 @@
 <section class="section" id="architecture">
   <h2 class="section-heading" data-number="05.">Architecture Samples</h2>
-  <p class="placeholder">Architecture diagrams coming in Phase 3.</p>
+
+  <div class="arch-tabs">
+    @for (diagram of diagrams; track diagram.title; let i = $index) {
+      <button
+        class="tab-btn"
+        [class.active]="activeTab() === i"
+        (click)="setTab(i)">
+        {{ diagram.title }}
+      </button>
+    }
+  </div>
+
+  @for (diagram of diagrams; track diagram.title; let i = $index) {
+    @if (activeTab() === i) {
+      <div class="arch-panel">
+        <p class="arch-description">{{ diagram.description }}</p>
+        <div class="layers-diagram">
+          @for (layer of diagram.layers; track layer.label) {
+            <div class="layer" [style.border-color]="layer.color">
+              <div class="layer-label" [style.color]="layer.color">{{ layer.label }}</div>
+              <div class="layer-items">
+                @for (item of layer.items; track item) {
+                  <span class="layer-item">{{ item }}</span>
+                }
+              </div>
+            </div>
+          }
+        </div>
+        <div class="arrow-hint">
+          <span class="arrow">&#8593;</span>
+          <span class="arrow-text">Dependencies point inward</span>
+          <span class="arrow">&#8593;</span>
+        </div>
+      </div>
+    }
+  }
 </section>
