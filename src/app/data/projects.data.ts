@@ -28,7 +28,7 @@ export const FEATURED_PROJECTS: Project[] = [
   {
     title: 'Car Rental',
     description: 'Booking platform with Factory and Decorator design patterns, NgRx state management, and admin approval workflow.',
-    techStack: ['Angular 17', '.NET 8', 'NgRx', 'SQL Server', 'FluentValidation'],
+    techStack: ['Angular', '.NET', 'NgRx', 'SQL Server', 'FluentValidation'],
     githubUrl: 'https://github.com/mashic',
     highlights: [
       'Factory Pattern for polymorphic user creation',
@@ -37,25 +37,25 @@ export const FEATURED_PROJECTS: Project[] = [
     ],
     featured: true
   },
-  {
-    title: 'Hiking App',
-    description: 'Progressive scalability demonstration — from monolith to distributed system with load test proof at each stage.',
-    techStack: ['Angular', '.NET Core', 'PostgreSQL', 'Redis', 'k6 Load Testing'],
-    githubUrl: 'https://github.com/mashic',
-    highlights: [
-      'Progressive scalability architecture',
-      'Load test proof at each scaling stage',
-      'Caching and performance optimization'
-    ],
-    featured: true
-  }
+//   {
+//     title: 'Hiking App',
+//     description: 'Progressive scalability demonstration — from monolith to distributed system with load test proof at each stage.',
+//     techStack: ['Angular', '.NET Core', 'PostgreSQL', 'Redis', 'k6 Load Testing'],
+//     githubUrl: 'https://github.com/mashic',
+//     highlights: [
+//       'Progressive scalability architecture',
+//       'Load test proof at each scaling stage',
+//       'Caching and performance optimization'
+//     ],
+//     featured: true
+//   }
 ];
 
 export const RSS_SUITE_APPS: RssSuiteApp[] = [
   {
     name: 'CRM',
     description: 'Multi-tenant customer relationship management for tracking clients, events, tasks, and sales pipeline across companies.',
-    techStack: ['ASP.NET Core 6', 'EF Core 7', 'Angular 16', 'SQL Server'],
+    techStack: ['ASP.NET Core', 'EF Core', 'Angular', 'SQL Server'],
     highlights: ['Generic CRUD with Template Method pattern', 'Multi-tenancy', 'Soft delete audit trail']
   },
   {
@@ -73,19 +73,19 @@ export const RSS_SUITE_APPS: RssSuiteApp[] = [
   {
     name: 'Loyalty Program',
     description: 'Multi-platform loyalty system — earn points on purchases and redeem rewards across web, mobile PWA, and WinForms terminals.',
-    techStack: ['ASP.NET Core 6', 'EF Core 7', 'Angular PWA', 'Firebase'],
+    techStack: ['ASP.NET Core', 'EF Core', 'Angular PWA', 'Firebase'],
     highlights: ['Offline-first POS with SQLite', 'Push notifications via Firebase', 'Event-based sync']
   },
   {
     name: 'Manufacturing MES',
     description: 'Manufacturing Execution System tracking production lifecycle — raw materials, work operations, machine assignments, quality control.',
-    techStack: ['ASP.NET Core 5', 'EF Core 5', 'Angular 10', 'SQL Server'],
+    techStack: ['ASP.NET Core', 'EF Core', 'Angular', 'SQL Server'],
     highlights: ['5-level generic CRUD hierarchy', 'SAP XML import pipeline', 'OEE production analytics']
   },
   {
     name: 'Hotel Reservation',
     description: 'Hospitality booking system — daily/hourly events, group reservations, seasonal pricing, fiscal compliance, and invoice generation.',
-    techStack: ['.NET 8', 'EF Core 9', 'Angular 19', 'PostgreSQL', 'Hangfire'],
+    techStack: ['.NET', 'EF Core', 'Angular', 'PostgreSQL', 'Hangfire'],
     highlights: ['Race-condition-proof bookings (SERIALIZABLE)', 'Background jobs via Hangfire', 'Seasonal pricing algorithm']
   },
   {

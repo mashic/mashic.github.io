@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject } from '@angular/core';
 import { AboutComponent } from './components/about/about.component';
 import { ArchitectureComponent } from './components/architecture/architecture.component';
 import { ContactComponent } from './components/contact/contact.component';
